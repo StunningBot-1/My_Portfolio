@@ -1,0 +1,323 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+    background-color: aqua;
+    /* width: 13vw; */
+    /* width: 434px; */
+    position: absolute;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    /* font-size: 30px; */
+    font-size: 1.6rem;
+    padding: 33px 0px;
+}
+
+body {
+    background-color: rgba(210, 180, 140, 0.299);
+    width: 87vw;
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    background: url('img/53618974-grunge-background-white-brick-wall-texture-with-black-doodle-hand-drawn-programming-icons.webp') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+}
+
+.infocont {
+    /* background-color: blue; */
+    height: 78vh;
+    width: 80vw;
+    margin: 7vh 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.devinfo {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 3em;
+    font-size: 2.3em;
+    padding-left: 2em;
+}
+
+.name {
+
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 2em;
+}
+
+.about {
+    font-size: 1.4em;
+    font-family: monospace;
+    padding-top: .5rem;
+    padding-left: 2.6em;
+}
+
+.moreabtme {
+    padding-top: 1em;
+    padding-left: 2.6em;
+}
+
+.infocont .devpic img {
+    height: 78vh;
+    justify-content: right;
+}
+
+.btn {
+    margin: 2rem;
+}
+
+.infocont .btn {
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 1em;
+    background-color: aqua;
+    font-weight: bold;
+    color: blue;
+    font-size: 1.2em;
+    border: .2em solid white;
+    border-radius: 2em;
+}
+
+.devinfo div a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: aliceblue;
+    border: 0.2rem solid aqua;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactform {
+    padding: 0px 2em;
+    padding-top: 10em;
+    margin: 0 88px;
+}
+
+/* .contactform h1{ */
+/* text-align: center; */
+/* } */
+.contactform div {
+    padding: 0.4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    padding: 0.1rem;
+    margin: 0.15rem 0;
+    border-radius: 0.2rem;
+    /* width: 26vw; */
+}
+
+.contactform form {
+    margin: 0 1rem;
+    border-radius: 0.2rem;
+    /* width: 26vw; */
+}
+
+#emailHelp {
+    font-size: 0.4rem;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.sm {
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 10px 20px;
+}
+
+.blogcont {
+    margin: 40px 88px;
+}
+
+.blogitem {
+    margin: 20px;
+}
+
+.blogitem button {
+    padding: 2px 4px;
+    font-size: .7rem;
+}
+
+.intro {
+    margin: 80px 88px;
+}
+
+.intro h1 {
+    margin: 23px;
+}
+
+.intro h2 {
+    margin: 12px
+}
+
+.intro p {
+    margin: 12px;
+}
+
+.skillcont {
+    padding: 12px;
+}
+
+.skillitem {
+    display: flex;
+    align-items: center;
+}
+
+.skill {
+    background-color: rgb(146, 251, 107);
+    height: .5em;
+}
+
+.hund {
+    width: 256;
+    background-color: greenyellow;
+    border: 1px solid black;
+}
+
+.fif {
+    width: 125px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.twfy {
+    width: 75px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.skillcont img {
+    height: .7em;
+}
+
+.sidebarGO {
+    transform: translate(-200px, 0px);
+}
+
+@media (max-width:760px) {
+    .infocont {
+        height: auto;
+        width: auto;
+    }
+
+    .devinfo {
+        font-size: 10px;
+    }
+
+    .devpic {
+        display: none;
+    }
+
+    .intro,
+    .blogcont,
+    .contactform {
+        margin: 50px 8px;
+    }
+
+    .contactform {
+        padding-top: 0px;
+    }
+
+    .blogcont {
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    .hello {
+        padding-left: 0;
+    }
+
+    .name {
+        padding-left: 0;
+    }
+
+    .about {
+        padding-left: 3px;
+    }
+
+    .moreabtme {
+        padding-left: 3px;
+    }
+
+    .main {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .infocont .btn {
+        font-size: 5px;
+    }
+}
+
+@media (max-width:400px) {
+    body::before {
+        content: "";
+        background: url('img/53618974-grunge-background-white-brick-wall-texture-with-black-doodle-hand-drawn-programming-icons.webp') no-repeat center center/cover;
+        z-index: -1;
+        opacity: 0.1;
+        height: 1200px;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+.cros {
+    margin-left: 145px;
+    margin-top: 6px;
+}
+
+.hambur {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
